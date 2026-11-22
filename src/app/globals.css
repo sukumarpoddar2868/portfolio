@@ -164,11 +164,9 @@ a {
   max-width: 100%;
   object-fit: contain;
   object-position: bottom right;
-  /* Soften the hard edges where the cut-out meets the frame. */
-  -webkit-mask-image: linear-gradient(to right, #0000 0%, #000 30%), linear-gradient(to top, #0000 0%, #000 8%);
-  -webkit-mask-composite: source-in;
-  mask-image: linear-gradient(to right, #0000 0%, #000 30%), linear-gradient(to top, #0000 0%, #000 8%);
-  mask-composite: intersect;
+  /* Only a light fade where the photo meets the next section. */
+  -webkit-mask-image: linear-gradient(to top, #0000 0%, #000 6%);
+  mask-image: linear-gradient(to top, #0000 0%, #000 6%);
   clip-path: inset(0 100% 0 0);
 }
 .hero-image.hero-image-loaded img {

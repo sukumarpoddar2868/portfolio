@@ -9,7 +9,7 @@ export const profile = {
   github: "https://github.com/sukumarpoddar2868",
   linkedin: "https://www.linkedin.com/in/sukumarpoddar",
   company: { name: "Shryxa Technologies", url: "https://shryxa.com" },
-  photo: "/hero.webp",
+  photo: "/portrait.webp",
   photoWidth: 1400,
   photoHeight: 1871,
 };
