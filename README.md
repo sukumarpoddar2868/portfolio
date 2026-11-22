@@ -15,7 +15,7 @@ All text (hero, experience, projects, skills, links) is in `src/content.ts`.
 `public/hero.webp` is the processed photo: background removed, warm grade, 1400×1871. To replace it, use a transparent portrait at least 1400 px wide, then update `photo`, `photoWidth` and `photoHeight` in `src/content.ts`.
 
 ## Background music
-The player pill (top right) plays the jazz playlist in `public/music/`. The track list is in `MusicPlayer` in `src/components/client.tsx`.
+The player pill (top right) plays the 7-track jazz playlist in `public/music/` (Jazz Lounge first). The track list is in `MusicPlayer` in `src/components/client.tsx`.
 
 How it behaves:
 - Browsers block autoplay, so it starts on the visitor's first click or key press and fades in to a low volume.

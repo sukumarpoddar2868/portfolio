@@ -159,10 +159,16 @@ a {
   height: 100%;
 }
 .hero-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: top center;
+  width: auto;
+  height: 96%;
+  max-width: 100%;
+  object-fit: contain;
+  object-position: bottom right;
+  /* Soften the hard edges where the cut-out meets the frame. */
+  -webkit-mask-image: linear-gradient(to right, #0000 0%, #000 30%), linear-gradient(to top, #0000 0%, #000 8%);
+  -webkit-mask-composite: source-in;
+  mask-image: linear-gradient(to right, #0000 0%, #000 30%), linear-gradient(to top, #0000 0%, #000 8%);
+  mask-composite: intersect;
   clip-path: inset(0 100% 0 0);
 }
 .hero-image.hero-image-loaded img {
@@ -1050,6 +1056,15 @@ footer {
     width: 100%;
     height: 62vh;
     max-height: 560px;
+  }
+  .hero-image img {
+    width: 100%;
+    height: 100%;
+    margin-right: 0;
+    object-fit: cover;
+    object-position: top center;
+    -webkit-mask-image: linear-gradient(to top, #0000 0%, #000 12%);
+    mask-image: linear-gradient(to top, #0000 0%, #000 12%);
   }
   .hero h1 {
     max-width: 100%;

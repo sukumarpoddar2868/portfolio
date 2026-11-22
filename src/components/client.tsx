@@ -227,8 +227,12 @@ export function ThemeControls() {
 // Pixabay Content License tracks (free to use, no attribution required; credited anyway).
 const tracks = [
   { src: "/music/jazz-lounge.mp3", name: "Jazz Lounge", artist: "Pixabay Artist", url: "https://pixabay.com/music/traditional-jazz-jazz-background-music-416542/" },
-  { src: "/music/jazz-background.mp3", name: "Jazz Background", artist: "Pixabay Artist", url: "https://pixabay.com/music/traditional-jazz-jazz-background-music-349165/" },
   { src: "/music/jazz-cafe.mp3", name: "Jazz Cafe", artist: "Pixabay Artist", url: "https://pixabay.com/music/traditional-jazz-jazz-cafe-music-348267/" },
+  { src: "/music/jazz-piano.mp3", name: "Jazz Piano", artist: "Music_Unlimited", url: "https://pixabay.com/music/" },
+  { src: "/music/smooth-jazz.mp3", name: "Smooth Jazz", artist: "FASSounds", url: "https://pixabay.com/music/" },
+  { src: "/music/jazz-background.mp3", name: "Jazz Background", artist: "Pixabay Artist", url: "https://pixabay.com/music/traditional-jazz-jazz-background-music-349165/" },
+  { src: "/music/soul-jazz.mp3", name: "Soul Jazz", artist: "SoulProdMusic", url: "https://pixabay.com/music/" },
+  { src: "/music/upbeat-jazz.mp3", name: "Upbeat Jazz", artist: "Daddy_s_Music", url: "https://pixabay.com/music/" },
 ];
 const VOLUME = 0.15;
 
